@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive orientation switcch</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <section class="border rounded-lg p-6 space-y-4">
+        <h2>Flex-col on Mobile, felex-row on md+</h2>
+        <div class="border rounded p-4 flex flex-col md:flex-row gap-5">
+            <div class="bg-gray-100 rounded p-4 flex-1">Block A</div>
+            <div class="bg-gray-100 rounded p-4 flex-1">Block B</div>
+            <div class="bg-gray-100 rounded p-4 flex-1">Block C</div>
+        </div>
+
+    </section>
+    <nav class="border rounded-b-xl px-6 h-16  m-6 flex justify-between bg-yellow-500 h-auto Flex-col on Mobile, felex-row on md+">
+        
+        <div class="flex gap-6 items-center flex-col md:flex-row gap-5 ">
+            <a href="#" class="font-bold text-lg">gola</a>
+            <ul class="flex gap-6 text-blue-700 flex-col md:flex-row gap-5">
+                <li><a href="#" class="hover:text-red-800 transition">Home</a></li>
+                <li><a href="#" class="hover:text-red-800 transition">features</a></li>
+                <li><a href="#" class="hover:text-red-800 transition">Contact</a></li>
+                 <a href="#" class="font-semibold text-lg">Login</a>
+             <button class="rounded-lg bg-black text-white
+             hover:bg-gray-800 px-4 py-2">sign up</button>
+
+            </ul>
+
+        </div>
+            
+        
+        </div>
+
+    </nav>
+    
+</body>
+</html>
