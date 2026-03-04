@@ -10,5 +10,7 @@ console.log(jsonStrinng);
 console.log(CEO);
 
 //JSON parsing
-const parsedObject = JSON.parse(jsonStrinng);
+const parsedObject  = JSON.parse(jsonStrinng);
 console.log(parsedObject);
+
+
