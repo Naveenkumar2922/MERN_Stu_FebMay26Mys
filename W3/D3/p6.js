@@ -16,4 +16,6 @@ const student={
     }
     };
     console.log(student.fullName());
+
+    
    
