@@ -28,4 +28,4 @@ console.log(fruits);
 
 // shift: to remove from begining
 fruits.shift();
-console.log(fruits); 
+console.log(fruits);  
