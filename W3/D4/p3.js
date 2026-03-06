@@ -11,7 +11,7 @@ console.log("price with tax:",pricewithgst);
 // using map to extract files
 let  users =[
     {name:"Arjun",age:24},
-    {name:"Krishna",age:24}
+    {name:"Krishna",age:24} 
 ];
 let names=users.map(user => user.name)
 console.log("",names);
