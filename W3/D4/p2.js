@@ -7,7 +7,7 @@ for(let i=0;i<numArray.length;i++){
 
 // for ...of
 for(let num of numArray){
-    console.log("",num);
+    console.log("",num); 
 }
 
 // for each
