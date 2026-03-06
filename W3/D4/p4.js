@@ -16,5 +16,5 @@ let student=[
 console.log(student);
 let passed =student
 .filter(student => student.marks >=70).map(student => student.name);
-console.log("passed students:",passed);
+console.log("passed students:",passed);  
 
