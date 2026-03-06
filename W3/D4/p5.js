@@ -10,7 +10,7 @@
 // reduce to object count by category
 let items =["pen","pencil","pen","eraser"];
 let count=items.reduce((a,b)=>{
-    a[items] =(a[items]||0)+1;
+    a[items] =(a[items]||0)+1; 
     return a;
 },{});
 console.log("items count:",count);
