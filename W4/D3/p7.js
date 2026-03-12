@@ -10,12 +10,12 @@ function fetchPost(url){
         if(!responce.ok){
             throw new Error("Http error Status Code:" +responce.status);
         }
-        return responce.json();
+        return responce.json(); 
     })
     .then(function(data){
         statusOutput.textContent = "Success: "+JSON.stringify(data,null,2);
     })
-    .catch(function(error){
+    .catch(function(error){ //promise function
         statusOutput.textContent = "Error: " +error.message;
     });
 }
