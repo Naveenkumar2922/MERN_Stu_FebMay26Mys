@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback form</title>
+</head>
+</html><body>
+    <h2>Feedback Form</h2>
+    <p>Total Feedback: <strong id="count">0</strong></p>
+
+    <form>
+        <input type="text" id="name" placeholder="Name" required="">
+        <p id="nameErr"></p>
+
+        <input type="email" id="email" placeholder="Email" required="">
+        <p id="emailErr"></p>
+
+        <select id="type">
+            <option value="Bug">Bug</option>
+            <option value="Suggestion">Suggestion</option>
+            <option value="Appreciation">Appreciation</option>
+        </select>
+
+        <textarea id="text" placeholder="Feedback (min 20 chars)"></textarea>
+        <p id="textErr"></p>
+
+        <button id="add">Submit Feedback</button>
+    </form>
+
+    <div id="display"></div>
+    <p id="empty"></p>
+
+    <script src="./FAQass2.js"></script>
+
+</body></html>
