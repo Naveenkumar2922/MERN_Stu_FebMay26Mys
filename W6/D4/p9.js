@@ -17,6 +17,10 @@ const server = http.createServer(function (req, res) {
         }));
         return;
     }
+    // 405: URL is valid but  the method is not supported
+    res.writeHead(405,{"Content-Type":"application/json"});
+    res.end(JSON.stringify({message:"method not allowed"}));
+
     res.writeHead(404,{"Content-Type":"application/json"});
     res.end(JSON.stringify({message:"Route not found"}));
 });
