@@ -1,0 +1,37 @@
+// Sorting, limiting and Pagination
+// MERN_Stu_FebMay26Mys\W8\D1\P4.js
+const mongoose = require("mongoose");
+const Product = require("./p3"); //importing from P3.js
+
+async function sortPaginationDemo(){
+    try{
+        await mongoose.connect("mongodb://localhost:27017/merntraining");
+        console.log("MongoDB connected successfully");
+
+        const sortedAscending = await Product.find({category: "Electronics"}).sort({price:1});
+        console.log(sortedAscending);
+
+        const sortedDecscending = await Product.find({category: "Electronics"}).sort({price:-1});
+        console.log(sortedDecscending);
+
+        // limit() restricts result count 
+        const limitedResults = await Product.find({category: "stationary"}).sort({createdOrder:1}).limit(2);
+         console.log("limitedresults",limitedResults);
+
+        //  pagination
+        const page =2;
+        const limit=2;
+        const skip=(page-1)*limit;
+
+        const paginatedResults= await Product.find({category: "stationary"}).sort({createdOrder:1}).skip(skipCount).limit(limitCount);
+
+         console.log("Pagination Results:",paginatedResults);
+
+        await mongoose.connection.close();
+        console.log("connection closed");
+    }
+     catch(error){
+        console.log("sort_Pagination demo error:",error.message);
+    }
+}
+sortPaginationDemo();
