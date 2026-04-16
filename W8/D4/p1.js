@@ -23,10 +23,10 @@ async function main() {
     catch (error) {
         console.error("Error:", error.message);
     }
-    finally {
-        await mongoose.disconnect();
-        console.log("Disconnected from DB.");
-    }
+        finally {
+            await mongoose.disconnect();
+            console.log("Disconnected from DB.");
+        }
 }
 
 main();
