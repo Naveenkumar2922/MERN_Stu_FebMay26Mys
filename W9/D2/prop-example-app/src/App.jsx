@@ -1,16 +1,17 @@
 import './App.css'
-
 // import { PropBasics } from "./components/P1"
 // import { PropDestructuring } from "./components/P2"
 // import { PropsChildren } from './components/P3';
 // import {PropDrillingDemo} from "./components/P4"
-//  import{SharedStateParent} from"./components/p5"
-// import { CompositionDemo } from './components/p6'
-//import { ObjectAndArrayProps } from './components/p7'
-// import { PropImmutability } from './components/p8'
-// import { PropsState } from './components/p9'
-// import { FunctionProps } from './components/p10'
-import { PropTypesDemo } from './components/p11'
+// import {SharedStateParent} from "./components/P5";
+// import { CompositionDemo } from "./components/P6";
+// import { ObjectAndArrayProps } from "./components/P7"
+// import { PropsImmutability } from "./components/P8"
+// import { PropsState } from "./components/P9";
+// import {FunctionProps} from "./components/P10"
+// import { PropTypesDemo } from "./components/P11"
+import { HOCExample } from "./components/P12";
+
 function App() {
 
   return (
@@ -19,15 +20,16 @@ function App() {
       {/* <PropDestructuring/> */}
       {/* <PropsChildren /> */}
       {/* <PropDrillingDemo /> */}
-      {/* <SharedStateParent/> */}
-      {/* <CompositionDemo/> */}
-      {/* <ObjectAndArrayProps/> */}
-      {/* <PropImmutability/> */}
-      {/* <PropsState/> */}
-      {/* <FunctionProps/> */}
-      <PropTypesDemo/>
+      {/* <SharedStateParent /> */}
+      {/* <CompositionDemo /> */}
+      {/* <ObjectAndArrayProps /> */}
+      {/* <PropsImmutability/> */}
+      {/* <PropsState /> */}
+      {/* <FunctionProps /> */}
+      {/* <PropTypesDemo /> */}
+      <HOCExample/>Higher-Order Components(HOC)
     </>
   )
 }
 
-export default App 
+export default App
