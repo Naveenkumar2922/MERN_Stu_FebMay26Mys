@@ -9,8 +9,8 @@ import './App.css'
 //import { ObjectAndArrayProps } from './components/p7'
 // import { PropImmutability } from './components/p8'
 // import { PropsState } from './components/p9'
-import { FunctionProps } from './components/p10'
-
+// import { FunctionProps } from './components/p10'
+import { PropTypesDemo } from './components/p11'
 function App() {
 
   return (
@@ -24,9 +24,10 @@ function App() {
       {/* <ObjectAndArrayProps/> */}
       {/* <PropImmutability/> */}
       {/* <PropsState/> */}
-      <FunctionProps/>
+      {/* <FunctionProps/> */}
+      <PropTypesDemo/>
     </>
   )
 }
 
-export default App
+export default App 
