@@ -1,0 +1,23 @@
+{
+  "name": "mern_stu_febmay26mys",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Naveenkumar2922/MERN_Stu_FebMay26Mys.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Naveenkumar2922/MERN_Stu_FebMay26Mys/issues"
+  },
+  "homepage": "https://github.com/Naveenkumar2922/MERN_Stu_FebMay26Mys#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}

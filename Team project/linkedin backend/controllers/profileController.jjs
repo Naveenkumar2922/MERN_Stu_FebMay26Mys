@@ -1,0 +1,30 @@
+let profiles = [];
+
+exports.updateProfile = (req, res) => {
+  const userId = req.user.userId;
+  const { name, skills, education, experience } = req.body;
+
+  let profile = profiles.find(p => p.userId === userId);
+
+  if (profile) {
+    profile.name = name;
+    profile.skills = skills;
+    profile.education = education;
+    profile.experience = experience;
+  } else {
+    profile = { userId, name, skills, education, experience };
+    profiles.push(profile);
+  }
+
+  res.json(profile);
+};
+
+exports.getMyProfile = (req, res) => {
+  const profile = profiles.find(p => p.userId === req.user.userId);
+  res.json(profile);
+};
+
+exports.getProfile = (req, res) => {
+  const profile = profiles.find(p => p.userId === req.params.id);
+  res.json(profile);
+};

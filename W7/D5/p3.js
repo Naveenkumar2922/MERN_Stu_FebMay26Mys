@@ -31,10 +31,10 @@ app.get("/login",function(req,res,next){
 
 app.get("/profile",function(req,res){
     if(!req.session.user){
-        return res.status(401).json({
-            success:false,
-            message:"No active login session found."
-        });
+            return res.status(401).json({
+                success:false,
+                message:"No active login session found."
+            });
     }
     res.json({
         success:true,
