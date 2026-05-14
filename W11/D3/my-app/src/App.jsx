@@ -3,7 +3,8 @@ import { useState } from 'react'
 //import { UseEffectLifecycle } from './components/p2'
 // import {AxiosLifecycle } from './components/p3';
 // import { CRUDOperation } from './components/p4';
-import { PaginationCaching } from './components/p5';
+//import { PaginationCaching } from './components/p5';
+import { UploadErrorBoundary } from './components/p6';
 
 import './App.css'
 
@@ -14,7 +15,8 @@ function App() {
       {/* <UseEffectLifecycle /> */}
       {/* <AxiosLifecycle/> */}
       {/* <CRUDOperation /> */}
-      <PaginationCaching />
+      {/* <PaginationCaching /> */}
+      <UploadErrorBoundary />
     </>
   )
 }
